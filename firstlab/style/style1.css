@@ -1,0 +1,75 @@
+.user-form ul{
+	width:750px;
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+}
+.user-form li{
+	padding:12px;
+	border-bottom:3px solid #cc6600;
+	position:relative;
+}
+.user-form li:first-child,.user-form li:last-child{
+    border-bottom:10px solid #cc6600;	
+}
+.user-form h2 {
+ font-family:'Times New Roman';
+ font-size:22pt;
+ margin:0;
+ display: inline;
+}
+.wrap-form{
+ width:750px;
+ margin: 0 auto; 
+ top: 50%;
+ height: 500px; 
+ margin-top: 100px;
+}
+.user-form textarea,.user-form input,.user-form select{
+ font-family:"Times New Roman";
+ font-size:11pt;
+}
+.user-form label{
+ height: 30px;
+ width:150px;
+ float:left;
+ padding:2px;
+ font-family: 'Times New Roman';
+ font-size:13pt;
+ margin-top: 1px;
+ display:inline-block;
+}
+.user-form input{
+ height:30px; 
+ width:400px;
+}
+.user-form button{
+ margin-left:156px; 
+ background-color: #DC143C;
+ border: 1px solid #DB143C;
+ border-bottom: 1px solid #DC256C;
+ border-radius:3px;
+ padding:6px;
+ font-weight:bold;
+ color:White;
+}
+.user-form button:hover{
+	opacity:.85;
+	cursor:pointer;
+}
+.user-form select{
+ height:23px; 
+ width:222px;
+}
+.user-form input, .user-form textarea, .user-form select {
+ border:1px solid #cc6600;
+ box-shadow: 0px 0px 3px #e05, 0 10px 15px #eee inset;
+ border-radius:2px;
+}
+.required_notification {
+ color:#cc6600;
+ margin:5px 0 0 0;
+ display:inline;
+ float:right;
+}
