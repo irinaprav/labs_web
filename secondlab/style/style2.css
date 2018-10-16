@@ -1,0 +1,113 @@
+#auth,#enter {
+    background-color:  #cc6600;
+    border: 1px solid black;
+	border-bottom: 1px solid black;
+    border-radius:3px;
+	padding:5px;
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#dialog input[type=submit]:hover{
+	opacity:.85;
+	cursor:pointer;
+}
+#form-login input[type=submit]:hover{
+	opacity:.85;
+	cursor:pointer;
+}
+
+#dialog,#form-login input{
+ padding:5px;
+ margin-top:7px;
+}
+
+#dialog label{
+ width:150px;
+ float:left;
+ padding:1px;
+ font-family: 'Times New Roman';
+ font-size:15pt;
+ color:#e15;
+ opacity:.50;
+ margin-top: 15px;
+ font-weight:bold;
+ margin-left:100px;
+ display:inline;
+}
+
+#form-login label{
+ width:150px;
+ float:left;
+ padding:1px;
+ font-family: 'Times New Roman';
+ font-size:15pt;
+ color:#e15;
+ opacity:.50;
+ margin-top: 15px;
+ font-weight:bold;
+ margin-left:100px;
+ display:inline;
+}
+
+
+.dialog input{
+ padding:5px;
+ margin-top:7px;
+}
+
+.dialog input[type=file]{
+ float:left;
+ padding:5px;
+ margin-top:7px;
+}
+
+.dialog input[type=submit]{
+ margin-left:250px;
+ background-color: #DC143C;
+ border: 1px solid #DB143C;
+ border-bottom: 1px solid #DC256C;
+ border-radius:3px;
+ font-weight:bold;
+ color:white;
+ 
+}
+
+#form-login input[type=submit]{
+ margin-left:250px;
+ background-color: #DC143C;
+ border: 1px solid #DB143C;
+ border-bottom: 1px solid #DC256C;
+ border-radius:3px;
+ font-weight:bold;
+ color:white;
+ 
+}
+
+#dialog,#form-login {
+	box-shadow: 0px 0px 3px #FCD298, 0 10px 15px #FCD298 inset;
+	width:550px;
+	margin:0 auto;
+	margin-top:100px;
+    border-top-color: #F4A460;
+    border-bottom-color: #F4A460;
+	border-top-width: 8px;
+    border-bottom-width: 8px; 	 
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-radius:3px;
+}
+
+.selecting select {
+ padding:1px;
+ margin-top:15px;
+ float:right;
+ font-family:"Times New Roman";
+ font-size:17pt;
+ margin-right:110px;
+ border:1px solid #aaa;
+ box-shadow: 0px 0px 3px #e05, 0 10px 15px #eee inset;
+ border-radius:2px;
+}
