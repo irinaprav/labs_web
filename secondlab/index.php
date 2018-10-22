@@ -4,6 +4,7 @@
   <head>
     <title>Authorization</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.6.4"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
     function disp(form) {
         console.log (form);
@@ -44,22 +45,17 @@
 
     </script>
 
-
-<script>
-function play(name) {alert(name);document.getElementById("wave").innerHTML = "<audio src=\"http://localhost/files/name\" autoplay></audio>"}
-</script>
-
 <script type="text/javascript" src="ajax.js"></script>
 	<link rel="stylesheet"  href = "style/style2.css"/>
     <link rel="stylesheet"  href = "style/style.css"/>
   </head>
-  <body style = "background-image: url(images/ff.png);">
+  <body style = "background-image: url(images/ff.png) ;background-repeat: repeat; ">
            <header>
             <div style="float: right; width: 300x; height: 100px;">
                 <?php if($_SESSION['login']) {?><font size="5"><bold><i> Welcome<?php echo ", ".$_SESSION['login'];?> </i></bold></font>
 		 <a href="http://localhost/logout.php" class="loghref" ><font size="4">logout</font></a>
-                <button class="header-button" onclick='location.href="http://localhost/changeinf.php"'>Change Information</button></div>
-               <button class="header-button" >Media</button></div>
+                <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/changeinf.php"'>Change Information</button></div>
+               <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/media.php"' >Media</button></div>
                 <?php } else{ echo "Make registration or Enter";};?>
             </div>
             
@@ -118,30 +114,9 @@ function play(name) {alert(name);document.getElementById("wave").innerHTML = "<a
     <a class="close" href="#close"></a>
 </div>
 
-
-			<!--<form method='post' action="http://localhost/save_user.php" class="dialog" id="dialog" title="Authorization Form" style ="display: none" enctype="multipart/form-data">
-				<label for="login">Login: </label>
-				<p><input type='text' name='login' required></p>
-				<label for="password">Password: </label>
-				<p><input type="password" name='password' required minlength="6"></p>
-                <label for="name">Name: </label>
-                <p><input type='text' name='name' required></p>
-                <label for="lastname">Lastname: </label>
-                <p><input type='text' name='lastname' required></p>
-                <label for="photo">Choose photo: </label>
-                <input type = "file" name = "picture" id = ""> 
-                <p><input type='submit' name='submit' value='Ok'></p>
-			</form>
-			<form method='post' action="http://localhost/testreg.php" class="enter" id="form-login" title="Entering Form" style ="display: none">
-				<label for="name">Login: </label>
-				<p><input type='text' name='login' required=""></p>
-				<label for="password">Password: </label>
-				<p><input type="password" name='password' minlength="6" required=""></p>
-				<p><input type='submit' name='submit' value='Ok'></p>
-			</form> -->
 	<form enctype="multipart/form-data">
 	<?php
-	    $hostname_Database = "localhost";
+	        $hostname_Database = "localhost";
             $database_Database = "usersdb";
             $username_Database = "admin";
             $password_Database = "";
@@ -176,10 +151,9 @@ function play(name) {alert(name);document.getElementById("wave").innerHTML = "<a
             $table .= "</tbody>";
             $table .= "</table> ";
             echo $table;
-            echo "<input type='hidden' id='name_order' value='asc'>";
+            echo "<input type='hidden' id='name_order' value='asc'>"; 
 		/*$dir = "files/";
 			foreach (new DirectoryIterator($dir)as $fileInfo){
-
 				if($fileInfo->isDot()||$fileInfo->isDir()) continue;
 				printf('<img src="http://localhost/images/1.png" width = "100px" onclick = "play(%s)" />%s',
 				$fileInfo->getFileName(), PHP_EOL
@@ -187,6 +161,21 @@ function play(name) {alert(name);document.getElementById("wave").innerHTML = "<a
 printf("<div id ='wave'></div>");
 			}*/
 			?>
+<div class="videoPlaceholder" >
+   <img src="images/f2.png" width = "100px" />
+   <div id ='wave'></div>
+</div>
+<div class="videoPlaceholder" >
+   <img src="images/f2.png" width = "100px" />
+   <div id ='wave'></div>
+</div>
+<script>
+$('.videoPlaceholder').click(function (event) {
+    var videoSrc = 'https://www.youtube.com/embed/_OzWxKSm1rU';
+    $(this).children('#wave').replaceWith('<audio controls="controls"><source src="files/imagine-dragons_-_natural.mp3" type="audio/mp3"></audio>')
+})
+
+</script>
 		</form> 
 	<footer>
 	©PravotorovaINC,2018
