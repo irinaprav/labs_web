@@ -83,7 +83,10 @@ background: #b0d0b6 ;
 position: fixed; 
 }
 
+.comp, .audioPlaceholder {
 
+	display: block;
+}
 body{
 background-color:#fdae68;
 }
@@ -252,4 +255,104 @@ a#login_pop:hover, a#join_pop:hover {
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
     border-color: #555 #888 #888;
 }
+
+
+
+.overlay1 {
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 10000;
+   visibility: hidden;
+   background-color: rgba(0, 0, 0, 0.8);
+   opacity: 0;
+   position: fixed; 
+   -webkit-transition: opacity .5s;
+   -moz-transition: opacity .5s;
+   -ms-transition: opacity .5s;
+   -o-transition: opacity .5s;
+   transition: opacity .5s;
+}
+.overlay1:target {
+   visibility: visible;
+   opacity: 1;
+}
+.modal {
+   top: 0;
+   right: 0;
+   left: 0;
+   width: 50%;
+   z-index: 10001;
+   opacity: 0;
+   display: block;
+   visibility: hidden;
+   position: absolute;
+   -webkit-transition: opacity 500ms ease-in;
+   -moz-transition: opacity 500ms ease-in;
+   transition: opacity 500ms ease-in; 
+   margin: 0 auto;
+   padding: 24px;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+   border: 1px solid rgba(120,120,120,.7);
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   background: rgba(60, 63, 65, 0.9); 
+   -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;
+   -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+   -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+   box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+}
+.overlay1:target+.modal{
+   top: 15%;
+   visibility: visible;
+   opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.modal {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 459px) and (max-width: 767px) {
+.modal {
+    width:85%;  
+  }
+}
+
+.video__title {
+   height: auto;
+   width: 70%;
+   padding: 0px 5px 15px 5px;
+   color: white;
+   font: normal 16px/22px 'Open Sans', Calibri, Arial, sans-serif;
+}
+@media (max-width: 530px) {
+.video__title {
+   height: 38px;
+   font-size: 12px;
+   line-height: 18px;
+  }
+}
+.video { 
+   position: relative; 
+   padding-bottom: 56.25%; 
+   height: 0; 
+   overflow:hidden; 
+} 
+.video iframe, 
+.video object, 
+.video embed {
+   position: absolute; 
+   top: 0; 
+   left: 0; 
+   width: 100%;
+   height: 100%; 
+
+
+
 

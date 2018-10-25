@@ -49,7 +49,7 @@
 	<link rel="stylesheet"  href = "style/style2.css"/>
     <link rel="stylesheet"  href = "style/style.css"/>
   </head>
-  <body style = "background-image: url(images/ff.png) ;background-repeat: repeat; ">
+  <body style = "background-image: url(images/ff.png) ;background-repeat: repeat;">
            <header>
             <div style="float: right; width: 300x; height: 100px;">
                 <?php if($_SESSION['login']) {?><font size="5"><bold><i> Welcome<?php echo ", ".$_SESSION['login'];?> </i></bold></font>
@@ -81,7 +81,7 @@
             </div>
             <input class="log" type="submit" value="Log In"  />
 
-            <a class="close" href="#close"></a>//
+            <a class="close" href="#close"></a>
         </div>
 
 
@@ -161,21 +161,6 @@
 printf("<div id ='wave'></div>");
 			}*/
 			?>
-<div class="videoPlaceholder" >
-   <img src="images/f2.png" width = "100px" />
-   <div id ='wave'></div>
-</div>
-<div class="videoPlaceholder" >
-   <img src="images/f2.png" width = "100px" />
-   <div id ='wave'></div>
-</div>
-<script>
-$('.videoPlaceholder').click(function (event) {
-    var videoSrc = 'https://www.youtube.com/embed/_OzWxKSm1rU';
-    $(this).children('#wave').replaceWith('<audio controls="controls"><source src="files/imagine-dragons_-_natural.mp3" type="audio/mp3"></audio>')
-})
-
-</script>
 		</form> 
 	<footer>
 	©PravotorovaINC,2018
