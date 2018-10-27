@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Authorization</title>
+    <title>Media</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.6.4"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 <script type="text/javascript" src="ajax.js"></script>
-    <link rel="stylesheet"  href = "style/style.css"/>
+<link rel="stylesheet"  href = "style/style.css"/>
   </head>
   <body style = "background-image: url(images/ff.png);background-repeat: repeat; border-width:7px;border-style:solid;border-color:black; height: 95%" enctype="multipart/form-data">
     <style>
@@ -78,7 +78,7 @@
              
             document.getElementById(\"".'vi'.$row['id']."\").contentWindow.postMessage('{\"event\":\"command\",\"func\":\"stopVideo\",\"args\":\"\"}', '*');
          
-    });
+            });
                 </script>";
               }
             }

@@ -53,9 +53,10 @@
            <header>
             <div style="float: right; width: 300x; height: 100px;">
                 <?php if($_SESSION['login']) {?><font size="5"><bold><i> Welcome<?php echo ", ".$_SESSION['login'];?> </i></bold></font>
-		 <a href="http://localhost/logout.php" class="loghref" ><font size="4">logout</font></a>
+		        <a href="http://localhost/labs_web/secondlab/logout.php" class="loghref" ><font size="4">logout</font></a>
                 <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/changeinf.php"'>Change Information</button></div>
-               <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/media.php"' >Media</button></div>
+                <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/media.php"' >Media</button></div>
+                <button class="header-button" onclick='location.href="http://localhost/labs_web/secondlab/canvas.php"' >Canvas</button></div>
                 <?php } else{ echo "Make registration or Enter";};?>
             </div>
             
@@ -152,14 +153,6 @@
             $table .= "</table> ";
             echo $table;
             echo "<input type='hidden' id='name_order' value='asc'>"; 
-		/*$dir = "files/";
-			foreach (new DirectoryIterator($dir)as $fileInfo){
-				if($fileInfo->isDot()||$fileInfo->isDir()) continue;
-				printf('<img src="http://localhost/images/1.png" width = "100px" onclick = "play(%s)" />%s',
-				$fileInfo->getFileName(), PHP_EOL
-				);
-printf("<div id ='wave'></div>");
-			}*/
 			?>
 		</form> 
 	<footer>
@@ -167,4 +160,3 @@ printf("<div id ='wave'></div>");
 	</footer>
   </body> 
 </html>
-
