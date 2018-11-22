@@ -28,7 +28,7 @@
              while ($row = $result->fetch_array())
             {
               if($row['type'] == "audio"){
-                echo "<div class=\"".'audioPlaceholder'.$row['id']."\" id=\"".'audioPlaceholder'.$row['id']."\"style = \"display = inline-block;  float:left; margin: 50px; \"> <img src='images/1.png' width = '150px' /> <div></div> <div class = \"comp\" style = \"display = block\" id =\"".'wave'.$row['id']."\"></div> <div id ='nameaud'>".$row['name']."</div>  </div>";
+                echo "<div class=\"".'audioPlaceholder'.$row['id']."\" id=\"".'audioPlaceholder'.$row['id']."\"style = \"display = inline-block; position:relative;  float:left; margin: 50px; \"> <img src='images/1.png' width = '150px' /> <div></div> <div class = \"comp\" style = \"display = block\" id =\"".'wave'.$row['id']."\"></div> <div id ='nameaud'>".$row['name']."</div>  </div>";
                 echo "<script>
                   $(\".".'audioPlaceholder'.$row['id']."\").click(function (event) {
                     console.log(\"".'wave'.$row['id']."\");
@@ -40,6 +40,7 @@
                                   sound.controls = 'controls';
                                   sound.src      = \"".$row['src'].$row['name']."\";
                                   sound.type     = 'audio/mp3';
+                                  sound.style.position = 'absolute';
                                   $(this).append(sound);    
                                 }
                                 document.getElementById(\"".'controls'.$row['id']."\").src = \"".$row['src'].$row['name']."\";
